@@ -1,10 +1,6 @@
 "use strict";
-var Dangers;
-(function (Dangers) {
-    Dangers[Dangers["Hight"] = 40] = "Hight";
-    Dangers[Dangers["Medium"] = 30] = "Medium";
-    Dangers[Dangers["Low"] = 20] = "Low";
-})(Dangers || (Dangers = {}));
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Planets = void 0;
 class Planets {
     constructor(name, description, resources, dangers) {
         this.name = name;
@@ -13,4 +9,5 @@ class Planets {
         this.dangers = dangers;
     }
 }
+exports.Planets = Planets;
 //# sourceMappingURL=planetsController.js.map

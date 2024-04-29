@@ -1,8 +1,9 @@
 import { begin } from "./user-interfaces/create-pj/begin";
-import { halo, alien, matrix } from "./objects/ship/shipControllers";
+import { simulationTravel } from "./navegation/exploration/exploration";
 
 function main(): void {
   begin();
+  simulationTravel();
 }
 
 main();

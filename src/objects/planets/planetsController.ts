@@ -1,58 +1,11 @@
-enum Dangers {
-  Hight = 40,
-  Medium = 30,
-  Low = 20,
-}
+import { PlanetSource } from "../resources/resourcesController";
+import { Difficulty } from "../../navegation/events/eventsControllers";
 
-abstract class Planets {
+export class Planets {
   constructor(
     public name: String,
     public description: String,
-    public resources: undefined,
-    public dangers: Dangers
+    public resources: PlanetSource,
+    public dangers: Difficulty
   ) {}
-}
-
-export class Tierra extends Planets {
-  constructor(
-    name: string,
-    description: string,
-    resources: undefined,
-    dangers: Dangers
-  ) {
-    super(name, description, resources, dangers);
-  }
-}
-
-export class Marte extends Planets {
-  constructor(
-    name: string,
-    description: string,
-    resources: undefined,
-    dangers: Dangers
-  ) {
-    super(name, description, resources, dangers);
-  }
-}
-
-export class Saturno extends Planets {
-  constructor(
-    name: string,
-    description: string,
-    resources: undefined,
-    dangers: Dangers
-  ) {
-    super(name, description, resources, dangers);
-  }
-}
-
-export class Urano extends Planets {
-  constructor(
-    name: string,
-    description: string,
-    resources: undefined,
-    dangers: Dangers
-  ) {
-    super(name, description, resources, dangers);
-  }
 }
